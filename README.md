@@ -23,19 +23,22 @@ A: The diagonal sudoku is solved by adding boxes from the diagonal as a unit in 
 # References
 ---
 
-1. Project Specifications:
-
-https://review.udacity.com/#!/rubrics/689/view
-
-2. Sudoku Strategies
-
-http://www.sudokudragon.com/sudokustrategy.htm
-
-3. Udacity Repository:
+* Udacity Repository:
 
 https://github.com/udacity/aind-sudoku
 
-4. Peter Norvig Blog: http://norvig.com/sudoku.html
+* Peter Norvig Blog: 
+
+http://norvig.com/sudoku.html
+
+* Sudoku Strategies:
+
+http://www.sudokudragon.com/sudokustrategy.htm
+
+
+* Project Specifications:
+
+https://review.udacity.com/#!/rubrics/689/view
 
 
 
