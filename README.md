@@ -1,16 +1,42 @@
 # Artificial Intelligence Nanodegree
-## Introductory Project: Diagonal Sudoku Solver
 
-Ref: https://github.com/udacity/aind-sudoku
+### Introductory Project: Diagonal Sudoku Solver
+
 
 
 # Question 1 (Naked Twins)
-Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+---
+
+Q: How do we use constraint propagation to solve the naked twins problem?
+  
+A: The naked twin is solved by enforcing that no other peer box contains values from the twins boxes. This elimination reduces the number of possible values in the unsolved boxes.
 
 # Question 2 (Diagonal Sudoku)
+---
+
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+
+A: The diagonal sudoku is solved by adding boxes from the diagonal as a unit in the units list. This addition changes the number of peer-boxes for boxes belonging in the diagonal (or the inverse diagonal). A box in the diagonal will, therefore, have a total of 26 peers, while boxes off-diagonal will continue to have 20 peers. The constraint propagation considers the units list to reduce the number of possible values of every unsolved box (reduction process at reduce_puzzle function).
+
+
+
+# References
+---
+
+1. Project Specifications:
+
+https://review.udacity.com/#!/rubrics/689/view
+
+2. Sudoku Strategies
+
+http://www.sudokudragon.com/sudokustrategy.htm
+
+3. Udacity Repository:
+
+https://github.com/udacity/aind-sudoku
+
+4. Peter Norvig Blog: http://norvig.com/sudoku.html
+
 
 
 ### Install
@@ -19,6 +45,7 @@ This project requires **Python 3**.
 
 We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
 Please try using the environment we provided in the Anaconda lesson of the Nanodegree.
+
 
 ##### Optional: Pygame
 
